@@ -10,6 +10,7 @@ defmodule MessageNotifierWeb.SlackChannel do
   end
 
   def handle_in("new_msg", %{"body" => body}, socket) do
+    IO.puts body
     Slackex.Chat.post_message("#general", body)
   end
 end
