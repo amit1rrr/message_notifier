@@ -1,4 +1,4 @@
-defmodule HelloWeb.RoomChannel do
+defmodule MessageNotifierWeb.SlackChannel do
   use Phoenix.Channel
 
   def join("messages:slack", _message, socket) do
